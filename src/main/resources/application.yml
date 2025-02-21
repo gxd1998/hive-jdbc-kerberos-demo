@@ -1,0 +1,19 @@
+server:
+  port: 8083
+
+hadoop:
+  hive:
+    driver: org.apache.hive.jdbc.HiveDriver
+    host: 172.18.25.246
+    port: 10000
+    username: hive
+    password: hive
+    enable: true
+    debug: true
+    realm: BIGDATA.HEX.COM
+    kdc: 172.18.25.246
+    authentication: kerberos
+    principal: hive/node1.zhiyu.cn@BIGDATA.HEX.COM
+    krb5: /data/kerberos_y/krb5.conf
+    keytab: /usr/local/share/applications/kerberos/hive.keytab
+
